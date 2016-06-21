@@ -1,3 +1,5 @@
+import com.sun.org.apache.xpath.internal.SourceTree;
+
 import java.util.Scanner;
 public class Main {
 
@@ -6,7 +8,8 @@ public class Main {
         do {
             System.out.println("1. Convert from degree F to degree C");
             System.out.println("2. Show your BMI");
-            System.out.println("3. quit");
+            System.out.println("3. Show your month");
+            System.out.println("4. quit");
             Scanner sc1 = new Scanner(System.in);
             switch (c = sc1.nextInt()) {
                 case 1:
@@ -35,9 +38,52 @@ public class Main {
 
                     }
                     break;
-                default:
-                    System.out.println("enter valid choice!");
+                case 3:
+                    System.out.println("Enter your month: ");
+                    Scanner sc4 =new Scanner(System.in);
+                    int m = sc4.nextInt();
+                    switch (m ){
+                        case 0:
+                            System.out.println("January");
+                            break;
+                        case 1:
+                            System.out.println("February");
+                            break;
+                        case 2:
+                            System.out.println("March");
+                            break;
+                        case 3:
+                            System.out.println("April");
+                            break;
+                        case 4:
+                            System.out.println("May");
+                            break;
+                        case 5:
+                            System.out.println("June");
+                            break;
+                        case 6:
+                            System.out.println("July");
+                            break;
+                        case 7:
+                            System.out.println("August");
+                            break;
+                        case 8:
+                            System.out.println("September");
+                            break;
+                        case 9:
+                            System.out.println("October");
+                            break;
+                        case 10:
+                            System.out.println("November");
+                            break;
+                        case 11:
+                            System.out.println("December");
+                            break;
+                    }
+//                default:
+//                    System.out.println("enter valid choice!");
+//                    break;
             }
-        } while (c != 3);
+        } while (c != 4);
     }
 }
